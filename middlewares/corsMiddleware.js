@@ -4,8 +4,10 @@ const ALLOWED_CORS = [
   'https://localhost:3000',
   'http://localhost:3001',
   'https://localhost:3001',
-  'http://maximkaschitskiy.github.io/mesto/',
-  'https://maximkaschitskiy.github.io/mesto/'
+  'http://maximkaschitskiy.github.io/mesto-frontend/',
+  'https://maximkaschitskiy.github.io/mesto-frontend/',
+  'http://maximkaschitskiy.github.io/',
+  'https://maximkaschitskiy.github.io/'
 ];
 
 module.exports = (req, res, next) => {
