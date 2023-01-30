@@ -7,15 +7,15 @@ const ALLOWED_CORS = [
   'http://maximkaschitskiy.github.io/mesto-frontend/',
   'https://maximkaschitskiy.github.io/mesto-frontend/',
   'http://maximkaschitskiy.github.io/',
-  'https://maximkaschitskiy.github.io/'
+  'https://maximkaschitskiy.github.io/',
+  'http://maximkaschitskiy.github.io',
+  'https://maximkaschitskiy.github.io'
 ];
 
 module.exports = (req, res, next) => {
   const { method } = req;
   const requestHeaders = req.headers['access-control-request-headers'];
   const { origin } = req.headers;
-
-  console.log(origin);
 
   if (ALLOWED_CORS.includes(origin)) {
     res.header('Access-Control-Allow-Origin', origin);
